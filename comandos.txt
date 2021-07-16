@@ -6,8 +6,9 @@ COMANDOS GIT
 git init -> inicia repositório oculto ./git
 git status -> mostra status dos arquivos do repositório
 git rm <nome_do_arquivo> -> remove arquivo
-git add -> manda arquivos para staging area
-git commit -> cria um checkpoint 
+git add <nome_do_arquivo>-> manda arquivos para staging area
+git commit -> entra em editor de texto cria um checkpoint 
 git config user.name "denisdickson" -> set username .
 git config --list -> lista  todas configurações
+git commit -m "texto" --> faz checkpoint
 
