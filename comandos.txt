@@ -1,0 +1,10 @@
+
+
+
+COMANDOS GIT
+
+git init -> inicia repositório oculto ./git
+git status -> mostra status dos arquivos do repositório
+git rm <nome_do_arquivo> ->
+
+
