@@ -1,0 +1,41 @@
+Adicionar/Remover/Expandir Volumes
+
+LVM -> Logic volume managment : forma simples de reunir fylesystem em um unico volume 
+    expandir e duminuir sem perder dados
+    consegue-se aumentar sem perder os dados 
+    volume: onde escreve algum dados
+
+LVM2:    
+    pv- phsicial volume - indica disco. hd. particao
+    vg-volumegroup - grupo de volumes -todos pv reunidos para usar o lv
+    lv- logical volume - pedaço do vg 
+
+pvs - pvdisplay
+vgd - vgdisplay
+lvs - lvdisplay
+
+pvcreate /dev/sdb/ ->  Cria volume fisico 
+vgcreate <name_vg> /dev/sdb /dev/sdc -> cria grupo com volumes criados e listados
+lvcreate -L 5G -n lv_giropops vgcatota ->  cria volume lógico de tamanho definido \
+                                            com volumes do grupo que se quer usar
+-L - indica tamanho do LV
+-n - indica nome do lv
+
+mkfs.ext4 /dev/vgcatota/lv_giropops --> comando para formatar volume
+mount /dev/vgcatota/lv_giropops --> monta volume 
+
+lvextend -L 5G /dev/vgcatota/lv_giropops ->  aumentar tamanho do volume em 5gb
+resizer2fs /dev/vgcatota/lv_giropops -> avisa ao sistema que volume foi aumentado
+
+resizer2fs /dev/vgcatota/lv_giropops 8G -> diminuir tamanho do volume... volume passa a ter 8G
+lvreduce -L -2G /dev/vgcatota/lv_giropops -> reduz em dois 2Gb o volume
+
+vgextend <nome_vg> <nome_disco>
+vgextend vgcatota /dev/sdd ->ex.: como extender vg
+
+vgreduce vgcatota /dev/sdd -> retira volume do grupo
+
+lvremove <nome_volume>
+unmount /mnt
+lvremove  /dev/vgcatota/lv_giropops ->remover volume lógico 
+
