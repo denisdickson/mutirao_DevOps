@@ -1,0 +1,31 @@
+
+Log -> registros de eventos .
+
+cd /var/log 
+
+auth.log -> arquivo de autenticação 
+kern.log -> arquivo de kernel 
+
+tail -f <nome do arquivo>
+    saida(Dez ultimos logs): session closed for user root
+         pam_unix(cron:session): session opened for user root by (uid=0)
+         pam_unix(cron:session): session closed for user root
+
+
+Prioridade
+emerg| alerta máximo, FUDEU TUDO, CORRA PARA AS COLINAS
+alert|
+crit|
+err                  os níveis de Prioridade são definidos pela aplicação
+warn 
+notice
+info
+debug ->mensagem com tudo que está acontecendo 
+
+Facilidade
+auth.err    |
+auth.emerg  |   Gera mensagens
+auth.debug  |
+
+
+
