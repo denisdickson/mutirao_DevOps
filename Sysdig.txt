@@ -1,0 +1,30 @@
+        Sysdig_Linuxtips
+
+strace -> rastrear chamadas de sistema
+tcpdump -> verificar a comunicação da rede
+lsof -> verificar arquivos abertos por determinado processo
+
+sysdig -> combinação do strace+tcpdump+lsof+outros scripts para formatar
+        filtra comunicação na rede, verificar arquivos abertos, monitorar arquivos, 
+        determinar quais comandos usuarios digitaram ...
+ 
+Gravar saída do sysdig em um arquivo:
+        $sysdig -w <nome_arquivo.scap>
+
+chisels -> customiza a saída  obtendo apenas informação que interessa
+sysdig -cl -> vizualizar chesels disponíveis 
+        topprocs_cpu -> quais são principais processos que estão utilizando mais cpu 
+sysdig -c <chisel>
+
+sysdig -c bottlenecks ->systemcalls mais lentas
+sysdig -i <chisel> informação sobre chisel
+
+fd.cip -> filtros
+
+sysdig -l
+vizualizar todos os filtros
+
+        <nome_arquivo> <nome_chisel>         
+sysdig -w file.spac -c bottlenecks
+
+
