@@ -27,4 +27,16 @@ vizualizar todos os filtros
         <nome_arquivo> <nome_chisel>         
 sysdig -w file.spac -c bottlenecks
 
+sysdig -w giropops.scap -c topprocs_cpu evt.cpu=0  --> filtro
 
+sysdig proc.name=cat or proc.name=vim 
+
+sysdig -c topfiles_bytes -> arquivos mais lidos e escrito no momento 
+
+sysdig -c  fdkcount_by proc.name "fd.type=file"
+
+sysdig -A -c echo_fds "fd.filename=giropops" -> monitora arquivo para ver se foi modificado 
+
+sysdig -s 4096 -z -w /tmp/giropops.scap.gz  --> grava em arquivo compactado 
+
+sysdig -r /tmp/giropops.scap.gz -c spy_users "user.name=jeferson"
