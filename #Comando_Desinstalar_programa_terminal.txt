@@ -1,5 +1,0 @@
-#Comando_Desinstalar_programa_terminal 
-dpkg --list 
- lista todo pacotes instalados no computador
-sudo apt-get --purge remove <nome_arquivo>
-  deleta programa instalados
