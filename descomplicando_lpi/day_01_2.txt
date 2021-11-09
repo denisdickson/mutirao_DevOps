@@ -1,0 +1,5 @@
+Qual das seguintes afirmações é verdadeira quando estamos falando sobre o diretório /proc?
+
+R: Todas mudanças dentro do arquivo /proc são reconhecidas pelo kerl em realtime 
+
+/proc = diretório virtual , contém informações em realtime do kernel 

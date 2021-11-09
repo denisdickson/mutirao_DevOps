@@ -1,0 +1,6 @@
+Qual primeiro programa iniciado no momento do boot pelo kernel linux quando usando SysV init?
+R: /sbin/init
+/sbin - somente root pode executar 
+
+init começa startar todos processos até aparecer tela de loginn 
+

@@ -1,0 +1,16 @@
+Quando usamos o rpm --verify para checar arquivos criados durante a instalação de pacotes RPM,
+quais das seguintes informações são levadas em consideração? 
+
+R: Timestamps, File sizes, MD5 checksums  
+
+
+$ rpm -Va #Processar todos pacotes e checa integridade verificando algumas caracteristicas
+
+$ rmp --verify <nome do pacote>
+
+S= tamanho diferente
+M= mode/permissões diferentes
+5=mdfile diferente
+D=major vs minor no diferente
+U= dono do arquivo diferente
+T=diferente

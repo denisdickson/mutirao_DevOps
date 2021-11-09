@@ -1,0 +1,6 @@
+Qual dos seguintes comandos pode ser utilizado para enviar uma mensagem para
+todos os terminais com usuários logados?
+
+R:para enviar mensagens para todos usuários logados, o comando usado é wall 
+
+ex: wall giropops.txt --> todos usuários recebem 

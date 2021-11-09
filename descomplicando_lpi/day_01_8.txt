@@ -1,0 +1,5 @@
+Quais dos comandos podem levar o sistema, que utilize SysV como sistema de init, para o modo de 
+manutenção?
+R: init 1 -telinit 1 levam para o modo monousário, modo de manutenção
+
+telinit - init

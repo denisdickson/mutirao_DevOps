@@ -1,0 +1,2 @@
+Qual comando pode ser utilizado para mostrar mensagens geradas pelo kernel no momento do boot?
+R: dmesg 

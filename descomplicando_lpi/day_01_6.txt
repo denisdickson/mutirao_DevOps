@@ -1,0 +1,6 @@
+Qual run levels voce nunca poderia configurar como runlevel default quando usando SysV init?
+R:  nunca deve-se colocar o init0 pois tem função de delisgar e  o init6 reboota
+
+##Acessar file para alterar o runlevel
+vim /etc/inittab 
+id:2:initdefault

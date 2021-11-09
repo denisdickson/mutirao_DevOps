@@ -1,0 +1,11 @@
+Qual configuração do SysV init pode ser usado para desabilitar a combinação ctrl-alt-delete?
+R: /etc/inittab
+Pode comentar o comando.
+
+
+
+#Onde fica config
+vim /etc/inittab 
+
+33| ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -r now 
+33| ca:12345:ctrlaltdel:echo "Isso nao eh windows, idiota"  

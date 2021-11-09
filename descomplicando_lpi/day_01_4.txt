@@ -1,0 +1,2 @@
+Qual opção de sistemas de init usado no Linux ?
+R: systemd. Upstart. SysV init 

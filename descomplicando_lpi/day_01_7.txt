@@ -1,0 +1,10 @@
+Quais informações são exibidas pelo comando lspci sobre o hardware do sistema?
+R: Configuraçãos do dispositivo IRQ
+Pci bus velocidade
+informações sobre fabricante
+
+# How to use
+$ lspci #info sobre dispositivos espetados na máquina
+$lspci -v(vv) #traz mais informações
+$lspci -k #módulos do kernel e drivers
+$lspci -mm #Torna mais fácil parsear 

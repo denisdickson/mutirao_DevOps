@@ -1,0 +1,15 @@
+Qual dos seguintes comandos podem reiniciar o sitema quando estamos utilizando o SysV init?
+R: shutdown -r now
+telinit 6 rebootar maquina
+ 
+Ram levels (default)
+level 0 = Desligar
+level 1= monousuário/manutenção
+level 6= rebootar
+
+2-5 multiusuario - redes
+
+shutdown -r now -- rebota
+shutdown -h now -- desliga
+shutdown -k now -- Simula desligamento
+
