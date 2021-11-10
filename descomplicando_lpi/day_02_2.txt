@@ -10,7 +10,9 @@ $ rmp --verify <nome do pacote>
 
 S= tamanho diferente
 M= mode/permissões diferentes
-5=mdfile diferente
-D=major vs minor no diferente
+5=MD5diferente
+D=major vs minor no version diferente
+L= erro ou link quebrado
 U= dono do arquivo diferente
-T=diferente
+G = grupo está diferente
+T= ntime diferente

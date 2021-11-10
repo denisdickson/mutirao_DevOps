@@ -1,0 +1,6 @@
+Quais das seguintes opções lista as dependências de um determinado pacote .deb/dpkg?
+R: $apt-cache depends <nomedopacote>
+
+verificar pacotes deb
+$apt-cache depends apache2 
+
