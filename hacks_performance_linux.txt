@@ -1,0 +1,23 @@
+Comandos terminal Linux 
+
+$history - mostra todos comandos digitados
+ history | grep cp 
+ history | grep ls
+ !403 -> utiliza comando digitado no history 
+ !403:p ->  mostra comando utilizado
+ ctrl+r = procura comandos nos digitado   
+ !df => executa sem precisar de escrever numer
+  !! => executa ultimo comando
+ ls -lha !* - traz todos argumentos
+ ls -lha !cp:<posiçao argumento>
+ 
+$ vim | gep 
+ ^gep^grep
+ corrige comando errado 
+
+$history -d 430 -> deleta comando no history
+
+$history -c -> deleta todo history
+
+$vim .bash_history -> contém todos comandos digitados de sessões antigas 
+
