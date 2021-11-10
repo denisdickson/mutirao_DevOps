@@ -1,0 +1,4 @@
+Qual dos seguintes comandos lista todos pacote instalados utilizando o RPM?
+
+$rpm --query --all 
+$rpm -qa 

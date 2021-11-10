@@ -1,0 +1,5 @@
+Qual comando do gerenciador de pacotes do Debian pergunta sobre a configuração de um pacote instalado 
+como se o pacote estivesse sendo instalado pela primeira vez?
+
+R: dpkg -reconfigure <nomedopacote>
+ser questionado sobre detalhes de configuração do pacote

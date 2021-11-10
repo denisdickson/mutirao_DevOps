@@ -1,0 +1,3 @@
+Qual opção do comando YUM pode realizar a atualização em todo sistema?
+
+yum update || yum upgrade 

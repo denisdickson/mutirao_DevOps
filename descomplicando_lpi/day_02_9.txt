@@ -1,0 +1,4 @@
+Qual arquivo pode ser editado para selecionar a localização de onde os pacotes de instalação do debian
+são baixados?
+R: /etc/apt/sources.list
+

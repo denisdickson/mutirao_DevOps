@@ -1,0 +1,6 @@
+Qual comando RPM pode mostrar nome do pacote que criou arquivo /etc/exports ?
+R: $rpm -qf /etc/exports -> pesquisa base rpm quem instalou 
+
+$rpm -qi <nomedopacote> -> traz informações sobre pacote já existente
+
+-qp -> busca pacote no arquivo

@@ -1,0 +1,6 @@
+Quando removendo um pacote, qual opção do dpkg vai remover comepletamente os arquivos incluindo os
+arquivos de configuração?
+R: $dpkg -l bb
+$dpkg -P <nomedopacote>
+
+apt-get remove --purge <nomedopacote>

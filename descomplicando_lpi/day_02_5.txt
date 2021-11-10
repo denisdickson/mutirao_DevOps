@@ -1,0 +1,13 @@
+Qual dos seguintes comandos pode ser utilizado para somente fazer o download do pacote rpm sem fazer 
+sem fazer a sua instalação?
+R: yumdownloader <nomedopacote> 
+deixa no repositório atual.
+
+yum install --downloadonly <nomedopacote>
+/var/cache/yum/x86_64
+
+yum install <nomedopacote>
+
+
+rpm só trata arquivos locais
+

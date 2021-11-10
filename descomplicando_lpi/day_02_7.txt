@@ -1,0 +1,3 @@
+Qual dos seguintes comando é usado para atualizar a lista de pacotes disponiveis no repositório 
+quando estamos utilizando o gerenciamento de pacotes baseado no dpkg?
+R: apt-get update -> verifica todos pacotes e retorna lista 
