@@ -1,0 +1,25 @@
+CRONTAB: 
+
+O crontab é um programa do Unix que edita o arquivo onde são especificados os comandos a serem executados e a hora e dia de execução 
+pelo cron, um serviço que executa comandos agendados nos sistemas operacionais do tipo Unix (como o Linux ou o MINIX, por exemplo). 
+O cron se encarregará de verificar a hora e determinar se existe ou não algum programa a ser rodado. Caso exista ele o rodará na 
+hora e data solicitada.
+
+
+comando para fazer gerenciamento de tarefas
+$crontab -e 
+-e = edit
+
+#MINUTOS HORAS DIA_DO_MES  MES   DIA_DA_SEMANA COMANDO
+0-59     0-23   1-31       1-12     0-7          BASH MEU_SCRIPT.SH
+
+0 2 * * 1-5 bash inventario.sh 
+agendar para duas da manhã de segunda a sexta todos os dias 
+
+a cada 5 minutos
+*/5 8-18  * 1,7,12 1-5 comando
+min  hour  day mouth week 
+
+*/1 * * * * date>>/tmp/minha_data.txt
+
+$ crontab -l -> lista todas crontab 
