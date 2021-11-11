@@ -1,0 +1,6 @@
+cd - == retorna para o ultimo diretório 
+
+$ echo $SHELL 
+
+Kernel - interface entre o hardware e o shell 
+
