@@ -4,3 +4,7 @@ $ echo $SHELL
 
 Kernel - interface entre o hardware e o shell 
 
+PID - Process identification 
+$ kill <pid> - para encerrar o processo 
+
+zombie process -> continua em execução mas não está sendo utilizado 
